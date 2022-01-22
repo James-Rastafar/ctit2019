@@ -16,3 +16,11 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+dependencies {
+    val fragment_version = "1.4.0"
+
+    //java language implementation
+    implementation("androidx.fragment:fragment:$fragment_version")
+    //kotlin
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+}
